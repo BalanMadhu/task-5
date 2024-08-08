@@ -1,0 +1,129 @@
+//1. Create Your Resume Data in JSON Format
+{
+  "name": "Sathiya Priya.S",
+  "contact": {
+    "email": "sathiiyapriyaa02@gmail.com",
+    "phone": "7904696406",
+    "address": "3/52 Narasingapuram Mannur (Post), Pollachi"
+  },
+  "education": [
+    {
+      "degree": "MSc in Computer Science",
+      "institution": "Your University",
+      "year": 2023
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "SQL",
+    "Java",
+    "React.js",
+    "Git",
+    "GitHub",
+    "Docker",
+    "Spring Boot"
+  ],
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Your Company",
+      "duration": "2 years"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Real-Time Weather Application",
+      "description": "Developed a real-time weather application utilizing map APIs to dynamically display weather information and hosted the website on Netlify."
+    },
+    {
+      "name": "Personal Portfolio Website",
+      "description": "Designed and developed a personal portfolio website using React.js with a clean and modern UI to showcase projects and skills effectively."
+    }
+  ]
+}
+
+
+//2. Iterate Over All For Loops (for, for in, for of, forEach)
+
+const resume = {
+  name: "Sathiya Priya.S",
+  contact: {
+    email: "sathiiyapriyaa02@gmail.com",
+    phone: "7904696406",
+    address: "3/52 Narasingapuram Mannur (Post), Pollachi"
+  },
+  education: [
+    {
+      degree: "MSc in Computer Science",
+      institution: "Your University",
+      year: 2023
+    }
+  ],
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "SQL",
+    "Java",
+    "React.js",
+    "Git",
+    "GitHub",
+    "Docker",
+    "Spring Boot"
+  ],
+  experience: [
+    {
+      role: "Full Stack Developer",
+      company: "Your Company",
+      duration: "2 years"
+    }
+  ],
+  projects: [
+    {
+      name: "Real-Time Weather Application",
+      description: "Developed a real-time weather application utilizing map APIs to dynamically display weather information and hosted the website on Netlify."
+    },
+    {
+      name: "Personal Portfolio Website",
+      description: "Designed and developed a personal portfolio website using React.js with a clean and modern UI to showcase projects and skills effectively."
+    }
+  ]
+};
+
+// for loop
+for (let i = 0; i < resume.skills.length; i++) {
+  console.log(resume.skills[i]);
+}
+
+// for in loop
+for (let key in resume.contact) {
+  console.log(`${key}: ${resume.contact[key]}`);
+}
+
+// for of loop
+for (let project of resume.projects) {
+  console.log(project.name);
+}
+
+// forEach loop
+resume.education.forEach(education => {
+  console.log(education.degree);
+});
+
+
+// Difference Between window, screen, and document Objects in JavaScript
+
+console.log(window.innerWidth); // Width of the window
+window.alert("Hello, World!"); // Alert box
+
+
+console.log(screen.width); // Screen width
+console.log(screen.height); // Screen height
